@@ -34,14 +34,14 @@ accionM(matriz,vector)
     ''')
 
 def restaC(tuplaA,tuplaB):
-    if (type(tuplaA)==int):num=tuplaA;tuplaA=(num,0)
-    if (type(tuplaB)==int):num=tuplaB;tuplaB=(num,0)    
+    if (type(tuplaA)==int or type(tuplaA)==float):num=tuplaA;tuplaA=(num,0)
+    if (type(tuplaB)==int or type(tuplaB)==float):num=tuplaB;tuplaB=(num,0)    
     tuplaFinal=(tuplaA[0]-tuplaB[0],tuplaA[1]-tuplaB[1])
     return(tuplaFinal)
     
 def sumaC(tuplaA,tuplaB):
-    if (type(tuplaA)==int):num=tuplaA;tuplaA=(num,0)
-    if (type(tuplaB)==int):num=tuplaB;tuplaB=(num,0)
+    if (type(tuplaA)==int or type(tuplaA)==float):num=tuplaA;tuplaA=(num,0)
+    if (type(tuplaB)==int or type(tuplaB)==float):num=tuplaB;tuplaB=(num,0)
     tuplaFinal=(tuplaA[0]+tuplaB[0],tuplaA[1]+tuplaB[1])
     return(tuplaFinal)
 
@@ -53,8 +53,8 @@ def multiplicacionC(tuplaA,tuplaB):
     return (tuplaFinal1[0]+tuplaFinal1[1],tuplaFinal2[0]+tuplaFinal2[1])
 
 def divisionC(tuplaA,tuplaB):
-    if (type(tuplaA)==int):num=tuplaA;tuplaA=(num,0)
-    if (type(tuplaB)==int):num=tuplaB;tuplaB=(num,0)    
+    if (type(tuplaA)==int or type(tuplaA)==float):num=tuplaA;tuplaA=(num,0)
+    if (type(tuplaB)==int or type(tuplaB)==float):num=tuplaB;tuplaB=(num,0)    
     valor1=(tuplaA[0]*tuplaB[0]) ##sin i
     valor2=((tuplaA[0]*-tuplaB[1])+(tuplaA[1]*tuplaB[0])) ## con i
     valor22=(tuplaA[1]*tuplaB[1]) ## con i**2
@@ -66,28 +66,28 @@ def divisionC(tuplaA,tuplaB):
     return(tuplaFinal)
 
 def moduloC(tuplaA):
-    if (type(tuplaA)==int):num=tuplaA;tuplaA=(num,0)    
+    if (type(tuplaA)==int or type(tuplaA)==float):num=tuplaA;tuplaA=(num,0)    
     tuplaFinal=((tuplaA[0]**2)+(tuplaA[1]**2))**0.5
     return tuplaFinal
 
 def conjugadoC(tuplaA):
-    if (type(tuplaA)==int):num=tuplaA;tuplaA=(num,0)    
+    if (type(tuplaA)==int or type(tuplaA)==float):num=tuplaA;tuplaA=(num,0)    
     tuplaFinal=(tuplaA[0],-tuplaA[1])
     return(tuplaFinal)
 
 def polarC(tuplaA):
-    if (type(tuplaA)==int):num=tuplaA;tuplaA=(num,0)    
+    if (type(tuplaA)==int or type(tuplaA)==float):num=tuplaA;tuplaA=(num,0)    
     tupla1=((tuplaA[0]**2)+(tuplaA[1]**2))**0.5
     tuplaFinal=(tupla1,atan(tuplaA[1]/tuplaA[0]))
     return(tuplaFinal)
 
 def cartesianoC(tuplaA):
-    if (type(tuplaA)==int):num=tuplaA;tuplaA=(num,0)    
+    if (type(tuplaA)==int or type(tuplaA)==float):num=tuplaA;tuplaA=(num,0)    
     tuplaFinal=(tuplaA[0]*math.cos(tuplaA[1]),tuplaA[0]*math.sin(tuplaA[1]))
     return(tuplaFinal)
 
 def faseC(tuplaA):
-    if (type(tuplaA)==int):num=tuplaA;tuplaA=(num,0)    
+    if (type(tuplaA)==int or type(tuplaA)==float):num=tuplaA;tuplaA=(num,0)    
     tuplaFinal=(math.atan(tuplaA[1]/tuplaA[0]))
     return(tuplaFinal)
 
