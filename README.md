@@ -18,6 +18,10 @@ Para probar las funciones del simulador, editamos el archivo con el idle de pyth
 
 Aqui debemos tener en cuenta que el vector son escritas asi `[(0.0,0.0),(0.0,0.0)]` donde los numeros son escritos entre parentesis y las matrices son reperesentadas como vectores de vectores `[[(0.0,0.0),(0.0,0.0)],[(0.0,0.0),(0.0,0.0)]]`
 
+Un ejemplo:
+
+![Capture](https://user-images.githubusercontent.com/46855679/67328707-7b001c80-f4df-11e9-82ae-88486e3e4b67.PNG)
+
 # **_Como usar en consola_**
 
 Para poderlo ejecutarlo en consola vamos primero a la carpeta que contenga nuestros archivos y en la dirección escribimos cmd, por ejemplo.
